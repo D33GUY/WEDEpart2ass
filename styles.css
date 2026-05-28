@@ -466,4 +466,132 @@
         }
 
         .btn:hover{opacity: 0.7;}
+
+         /* =============================
+        TABLET — screens up to 768px
+         ============================= */
+        @media (max-width: 768px) {
+
+        /* Nav: stack logo above links */
+        nav {
+            flex-direction: column;
+            height: auto;
+            padding: 16px 0;
+            gap: 12px;
+        }
+   
+
+        nav ul {
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+         /* Hero text smaller */
+         .hero-title {
+            font-size: 38px; 
+         }
+
+        .hero-sub   {
+            font-size: 13px;
+        }
+
+        /* About page: stack story side by side into single column */
+        .about-story {
+            grid-template-columns: 1fr; 
+        }
+        .about-story-img {
+            height: 220px; 
+        }
+
+        /* Vision & Mission: single column */
+        .vision-mission {
+            grid-template-columns: 1fr; 
+        }
+
+         /* Stats: 2 columns instead of 3 */
+        .stats {
+             grid-template-columns: repeat(2, 1fr); 
+        }
+
+        /* Contact: single column */
+        .contact-layout {
+            grid-template-columns: 1fr; 
+        }
+        .contact-image  {
+            height: 220px;
+        }
+
+        /* Services: single column */
+        .service-intro {
+            grid-template-columns: 1fr; 
+        }
+
+        /* Form: single column */
+        .form-row {
+            grid-template-columns: 1fr; 
+        }
+}
+
+        /* =============================
+             MOBILE — screens up to 480px
+         ============================= */
+        @media (max-width: 480px) {
+
+         /* Smaller padding on header */
+         header {
+            padding: 0 16px; 
+         }
+
+         /* Nav links even smaller */
+        nav ul li a {
+            font-size: 10px;
+            gap: 10px; 
+        }
+
+        /* Hero */
+        .hero {
+            height: 320px;
+        }
+        .hero-title {
+            font-size: 30px; 
+        }
+
+        /* Page hero banner */
+        .page-hero {
+            padding: 36px 20px;
+        }
+         .page-hero h2 {
+            font-size: 30px; 
+         }
+
+        /* Container less padding */
+        .container {
+            width: 95%; 
+            margin: 32px auto; 
+        }
+
+        /* Cards single column */
+        .cards {
+             grid-template-columns: 1fr; 
+        }
+        .product-grid {
+            grid-template-columns: repeat(2, 1fr); 
+        }
+
+        /* Stats single column */
+        .stats {
+            grid-template-columns: 1fr; 
+        }
+
+        /* Shop hero */
+        .shop-hero h2 {
+            font-size: 28px; 
+        }
+
+        /* Buttons full width on mobile */
+        .form-btn {
+            width: 100%; justify-content: center; 
+        }
+}
     
